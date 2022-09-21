@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="">
+    <nav class="sticky top-0 ">
+        <ul class="flex   items-center justify-between cursor-pointer bg-black p-4 sticky top-0">
+            <img class="h-[30px]" src="./Imgs/logo.png" alt="">
+            <div class="flex items-center space-x-3">
+                <li class="cursor-pointer hover:text-green-400 ">Home</li>
+                <li class="cursor-pointer hover:text-green-400 ">About</li>
+            </div>
+        </ul>
+    </nav>
+
+    <div class=" bg-gradient-to-r from-green-500 to-blue-500 flex flex-col items-center text-xs h-[100vh] ">
+        <div class="songList py-3 text-black space-y-3 w-[100%] flex flex-col justify-center  items-center md:w-[50%]">
+
+            <!-- <div class="songitem flex items-center justify-between p-3 rounded-xl bg-white w-[90%] ">
+                <p class="songName">{}</p>
+                <span class="time">1:55
+                    <i id="" class="far songitemplay fa fa-play-circle text-xl"></i>
+                </span>
+            </div> -->
+
+        </div>
+    </div>
+
+
+    <div class="bottom  bg-black  sticky bottom-0 py-3">
+        <div class="songInfo text-center space-x-3">
+            <span id="mastersongname" ></span>
+        </div>
+
+        <div class="flex flex-col justify-center items-center">
+
+            <input class="w-[90%] cursor-pointer" type="range" name="" id="myProgressBar" min="0" max="100" value=0>
+            <div class="icons text-2xl space-x-3 mt-2">
+                <i class="fas fa-backward cursor-pointer" id="previous"></i>
+                <i class="far fa-play-circle cursor-pointer" id="masterplay" ></i>
+                <i class="fas fa-forward cursor-pointer" id="next"></i>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/9266ec34a2.js" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
